@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: deploy
-# Recipe:: web-restart
+# Recipe:: sidekiq
 
 include_recipe 'deploy'
 
