@@ -12,7 +12,7 @@ node[:deploy].each do |application, deploy|
 
   service 'sidekiq' do
     provider Chef::Provider::Service::Upstart
-    supports :status => true, :restart => true, :reload => true
+    supports :status => true, :stop => true, :restart => true
     action :restart
   end
 end
